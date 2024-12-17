@@ -26,3 +26,17 @@ Las URLs de Django se usan para mapear URLs a vistas. Las URLs se definen en un 
 
 ![alt text](image-1.png)
 
+
+## ORM
+![alt text](image-8.png)
+
+simulacion
+![alt text](cicloRequestResponse.gif)
+
+
+Backend frontend
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+
+![alt text](image-12.png)
