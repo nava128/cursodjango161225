@@ -1,0 +1,70 @@
+{%  extends 'app_tienda/base.html' %}
+
+{% block contenido %}
+
+	<br>
+
+<div class="row"><!-- Filas de tarjetas-->
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Cliente:</h5>
+			<hr>
+			<a class="btn btn-outline-info  btn-sm btn-block" href="">Actualizar Cliente</a>
+			<br>
+			<a class="btn btn-outline-danger  btn-sm btn-block" href="">Borrar Cliente</a>
+
+		</div>
+	</div><!-- columna 1 tarjeta 1-->
+
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Informacion de contacto</h5>
+			<hr>
+			<p>Email: </p>
+			<p>Telefono: </p>
+		</div>
+	</div><!-- columna 2 tarjeta 2-->
+
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Total de pedidos</h5>
+			<hr>
+			<h1 style="text-align: center;padding: 10px"></h1>
+		</div>
+	</div><!-- columna 2 tarjeta 2-->
+</div> <!-- Filas de tarjetas-->
+
+
+<br>
+<div class="row"><!-- Filas de buscar-->
+	<div class="col">
+		<div class="card card-body">
+			<form method="get">
+
+		    <button class="btn btn-primary" type="submit">Buscar</button>
+		  </form>
+		</div>
+	</div>
+	
+</div><!-- Filas de buscar-->
+<br>
+
+<div class="row"> <!-- Filas de productos-->
+	<div class="col-md"> <!-- columna tarjeta tabla de productos-->
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th>Producto</th>
+					<th>Categoria</th>
+					<th>Fecha de pedido</th>
+					<th>Estado</th>
+					<th>Actualizar</th>
+					<th>Borrar</th>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+</div><!-- Filas de productos-->
+
+{% endblock contenido%}

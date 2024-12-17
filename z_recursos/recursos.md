@@ -1,5 +1,9 @@
-## Link
-- https://github.com/divanov11/crash-course-CRM.git
+## pantalla inicio
+![alt text](image-1.png)
 
-https://code.visualstudio.com/docs/python/tutorial-django
+## pantalla clientes
+![alt text](image-2.png)
+
+## pantalla productos
+![alt text](image-3.png)
 

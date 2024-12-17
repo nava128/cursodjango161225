@@ -1,0 +1,45 @@
+{% extends 'app_tienda/base.html' %}
+
+{% block contenido %}
+
+{%include 'app_tienda/estadotienda.html'%}
+
+<br>
+
+<div class="row"><!-- Fila de clientes y pedidos-->
+	<div class="col-md-5"><!-- Columna de clientes-->
+		<h5>CLIENTES:</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="">Agregar Cliente</a>
+			<table class="table table-sm">
+				<tr>
+					<th></th>
+					<th>Cliente</th>
+					<th>Pedidos</th>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+
+	<div class="col-md-7"> <!-- Columna de pedidos-->
+		<h5>ÚLTIMOS 5 PEDIDOS</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="">Agregar pedido</a>
+			<table class="table table-sm">
+				<tr>
+					<th>Producto</th>
+					<th>Fecha de pedido</th>
+					<th>Estado</th>
+					<th>Actualizar</th>
+					<th>Borrar</th>
+				</tr>
+		
+			</table>
+		</div>
+	</div>
+
+</div><!-- Fila de clientes y pedidos-->
+{% endblock contenido %}
