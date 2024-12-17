@@ -1,4 +1,6 @@
+##  pagina official Django
 
+[Managing static files ](https://docs.djangoproject.com/en/2.1/howto/static-files/)
 
 ## Link
 - https://github.com/divanov11/crash-course-CRM.git

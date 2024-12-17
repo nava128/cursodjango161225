@@ -1,0 +1,21 @@
+
+#logo{
+}
+
+body{
+    background-color: #fdfde7;
+}
+
+
+#pedidos-totales{
+    background-color: #ec5544;
+}
+
+
+#pedidos-entregados{
+    background-color: #2b940a;
+}
+
+#pedidos-pendientes{
+    background-color: #2874dd;
+}
