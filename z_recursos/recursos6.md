@@ -12,3 +12,8 @@
 
 ## ciclo de vida Django
 [Why is Django’s lifecycle a high priority at the very begin](https://awstip.com/why-is-djangos-lifecycle-a-high-priority-at-the-very-begin-part-1-ecc427e848c5)
+
+
+## resultados
+
+![Panel con resultados desde las tablas](image.png)
