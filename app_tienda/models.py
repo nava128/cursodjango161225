@@ -12,6 +12,12 @@ class Cliente(models.Model):
 	def __str__(self):
 		return self.nombre
 
+class Etiqueta(models.Model):
+	nombre = models.CharField(max_length=200, null=True)
+
+	def __str__(self):
+		return self.nombre
+
 class Producto(models.Model):
 	CATEGORIA = (
 			('Interior', 'Interior'),
@@ -24,6 +30,10 @@ class Producto(models.Model):
 	descripcion = models.CharField(max_length=200, null=True)
 	fecha_de_creacion = models.DateTimeField(auto_now_add=True, null=True)
 
+	def __str__(self):
+		return self.nombre
+
+
 class Pedido(models.Model):
 	ESTADO = (
 			('Pendiente', 'Pendiente'),
@@ -32,7 +42,14 @@ class Pedido(models.Model):
 			)
 
 	#cliente = 
+	Cliente = models.ForeignKey(Cliente, null=True, on_delete= models.SET_NULL)
 	#producto = 
+	Producto = models.ForeignKey(Producto, null=True, on_delete= models.SET_NULL)
 	estado = models.CharField(max_length=200, null=True, choices=ESTADO)
 	fecha_de_creacion = models.DateTimeField(auto_now_add=True, null=True)
+	
+	def __str__(self):
+		return self.Producto.nombre
+		
+
 	
