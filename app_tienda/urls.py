@@ -6,5 +6,5 @@ from app_tienda import views
 urlpatterns = [
     path('', views.inicio, name='inicio'),
     path('productos/', views.productos, name='productos'),
-    path('clientes/', views.clientes, name='clientes'),
+    path('clientes/<str:pk_test>/', views.clientes, name='clientes'),
 ]

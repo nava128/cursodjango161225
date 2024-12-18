@@ -20,8 +20,8 @@
 		<div class="card card-body">
 			<h5>Informacion de contacto</h5>
 			<hr>
-			<p>Email: </p>
-			<p>Telefono: </p>
+			<p>Correo:   {{clientes.correo}} </p>
+			<p>Telefono: {{clientes.telefono}} </p>
 		</div>
 	</div><!-- columna 2 tarjeta 2-->
 
@@ -29,7 +29,7 @@
 		<div class="card card-body">
 			<h5>Total de pedidos</h5>
 			<hr>
-			<h1 style="text-align: center;padding: 10px"></h1>
+			<h1 style="text-align: center;padding: 10px">{{total_pedidos}}</h1>
 		</div>
 	</div><!-- columna 2 tarjeta 2-->
 </div> <!-- Filas de tarjetas-->
@@ -61,6 +61,17 @@
 					<th>Actualizar</th>
 					<th>Borrar</th>
 				</tr>
+				{% for pedido in pedidos  %}
+				<tr>
+					<td>{{ pedido.Producto }}</td>
+					<td>{{ pedido.Producto.categoria }}</td>
+					<td>{{ pedido.fecha_de_creacion }}</td>
+					<td>{{ pedido.estado }}</td>
+					<td><a class="btn btn-warning btn-sm" href="">Actualizar</a></td>
+					<td><a class="btn btn-danger btn-sm" href="">Borrar</a></td>
+				</tr>
+
+				{% endfor %}
 
 			</table>
 		</div>

@@ -27,5 +27,11 @@ def productos(request):
 def pedidos(request):
 	return render(request, 'app_tienda/productos.html')
 
-def clientes(request):
-	return render(request, 'app_tienda/clientes.html')
+def clientes(request, pk_test):
+	clientes=Cliente.objects.get(id=pk_test)
+	pedidos= clientes.pedido_set.all()
+	total_pedidos= pedidos.count()
+	context = {'clientes':clientes, 'pedidos':pedidos, 'total_pedidos':total_pedidos}
+	return render(request, 'app_tienda/clientes.html', context)
+
+	

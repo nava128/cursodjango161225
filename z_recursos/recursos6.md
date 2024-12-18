@@ -15,5 +15,11 @@
 
 
 ## resultados
-
-![Panel con resultados desde las tablas](image.png)
+- pagina inicio
+- 
+![Pagina inicio](image-1.png)
+- pagina productos
+-
+![pagina producto](image-2.png)
+- pagina clientes
+![pagina clientes](image-3.png)
