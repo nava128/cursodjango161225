@@ -25,10 +25,15 @@ SECRET_KEY = 'django-insecure-*26b+u^xa7+#zz499^kc8-bib7vwa%&hp@24&rwp__p9d^@i+p
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
-
-
+# modificado por nava
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "9000-idx-cursodjango161225-1734367280674.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev"
+]
+# nueva linea para idex
+CSRF_TRUSTED_ORIGINS = [
+    'https://9000-idx-cursodjango161225-1734367280674.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev'
+]
 # Application definition
 
 INSTALLED_APPS = [
