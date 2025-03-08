@@ -28,8 +28,8 @@ DEBUG = True
 # modificado por nava
 ALLOWED_HOSTS = [
     "127.0.0.1",
-    "9000-idx-cursodjango161225-1734367280674.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev"
-]
+    "localhost",
+   ]
 # nueva linea para idex
 CSRF_TRUSTED_ORIGINS = [
     'https://9000-idx-cursodjango161225-1734367280674.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev'
